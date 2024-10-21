@@ -79,7 +79,6 @@ public class Stone {
                                         break;
                                     case 2:
                                         System.out.println("==LIST BOOKMARK==");
-                                        BookmarkDAO.kelolaBookmark(sc);
                                         break;
                                     case 3:
                                         String search;
