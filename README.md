@@ -2,10 +2,9 @@
 
 ## DrStone
 
-Aplikasi ini adalah aplikasi edukasi yang bertujuan untuk menambah wawasan mengenai bebatuan yang ada
-di permukaan bumi. Dalam aplikasi ini, user dapat mencari informasi tentang bebatuan dan juga melatih 
-wawasan dengan bermain mini games.
+Dr.Stone adalah aplikasi yang dapat membantu pencarian informasi tentang bebatuan di muka bumi, yang meliputi proses pembentukan, karakteristik, gambar bebatuan, dan lain-lain. kemudian pengguna dapat menguji pengetahuan dengan fitur mini games yang tersedia
 
+## Kelompok 1
 Anggota Kelompok:
 - Faqihuddin Al-Ghiffary (2307336)
 - Muhammad Iqbal Ridho (2309141)
