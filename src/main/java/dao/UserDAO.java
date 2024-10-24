@@ -38,30 +38,6 @@ public class UserDAO extends BaseDAO
         return user;
     }
 
-    public static User searchByIdUser(String idUser)
-    {
-        User user = null;
-        try
-        {
-            con = getCon();
-            String query = "SELECT * FROM users WHERE idUser = '%s'";
-            query = String.format(query, idUser);
-
-            st = con.prepareStatement(query);
-            ResultSet resultSetUser = st.executeQuery();
-            user = new User(UUID.fromString(resultSetUser.getString("idUser")), resultSetUser.getString("username"), resultSetUser.getString("pass"));
-        }
-        catch (SQLException e)
-        {
-            e.printStackTrace();
-        }
-        finally
-        {
-            closeCon(con);
-        }
-        return user;
-    }
-
     public static void registerUser(User user) {
         String query = String.format(
                 "INSERT INTO users (idUser, username, pass) VALUES ('%s', '%s', '%s')",  user.getIdUser(), user.getUsername(), user.getPassword()
