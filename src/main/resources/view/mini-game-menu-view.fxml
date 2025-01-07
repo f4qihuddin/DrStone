@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: #E77C11;" styleClass="anchorPanes" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MiniGameMenuController">
+   <children>
+      <Text fill="#fdf0d5" layoutX="381.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memorize &amp; Match" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <VBox layoutX="450.0" layoutY="315.0" spacing="25.0">
+         <children>
+            <Button fx:id="easyModeButton" mnemonicParsing="false" onMouseClicked="#goToEasyMode" prefHeight="50.0" prefWidth="300.0" styleClass="easyDifficultyButton" stylesheets="@style.css" text="Mudah">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="mediumModeButton" mnemonicParsing="false" onMouseClicked="#goToMediumMode" prefHeight="50.0" prefWidth="300.0" styleClass="mediumDifficultyButton" stylesheets="@style.css" text="Normal">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="hardModeButton" mnemonicParsing="false" onMouseClicked="#goToHardMode" prefHeight="50.0" prefWidth="300.0" styleClass="hardDifficultyButton" stylesheets="@style.css" text="Sulit">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="399.0" layoutY="162.0" prefHeight="113.0" prefWidth="400.0" style="-fx-background-color: #bb3e03; -fx-background-radius: 20;" />
+      <Text fill="#fdf0d5" layoutX="449.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Permainan :">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#fdf0d5" layoutX="449.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Skor tertinggi     :">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalPlayed" fill="#fdf0d5" layoutX="656.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="highestScore" fill="#fdf0d5" layoutX="656.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="mainMenuButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToMainMenu" prefHeight="60.0" prefWidth="60.0">
+         <graphic>
+            <SVGPath content="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" scaleX="2.0" scaleY="2.0" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
