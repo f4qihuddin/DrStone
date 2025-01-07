@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: #efefef;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LearningController">
+   <children>
+      <VBox prefHeight="556.0" prefWidth="1200.0" spacing="50.0" style="-fx-background-color: #efefef;" AnchorPane.bottomAnchor="94.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="113.0" prefWidth="1200.0" style="-fx-background-color: #E77C11;" styleClass="anchorPanes" stylesheets="@style.css">
+               <children>
+                  <Button fx:id="mainMenuButton" layoutX="21.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#goToMainMenu" prefHeight="60.0" prefWidth="60.0" AnchorPane.leftAnchor="25.0">
+                     <graphic>
+                        <SVGPath content="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" scaleX="2.0" scaleY="2.0" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="bookmarkButton" layoutX="1033.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#goToBookmark" prefHeight="60.0" prefWidth="60.0" AnchorPane.rightAnchor="100.0">
+                     <graphic>
+                        <SVGPath content=" M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2 M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" scaleX="2.0" scaleY="2.0" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="categoryButton" layoutX="1115.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#goToCategory" prefHeight="60.0" prefWidth="60.0" AnchorPane.rightAnchor="25.0">
+                     <graphic>
+                        <SVGPath content="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" fillRule="EVEN_ODD" scaleX="2.0" scaleY="2.0" />
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="143.0" prefWidth="800.0" style="-fx-background-color: #efefef;" styleClass="anchorPanes" stylesheets="@style.css">
+               <children>
+                  <VBox layoutX="166.0" layoutY="25.0" />
+                  <Text fx:id="randomQuotesText" fill="#e77c11" layoutX="8.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Random Quotes" textAlignment="JUSTIFY" wrappingWidth="784.4798126220703">
+                     <font>
+                        <Font name="Verdana Bold Italic" size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <VBox>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="862.0">
+                     <children>
+                        <TextField fx:id="searchBar" prefHeight="50.0" prefWidth="800.0" promptText="Apa yang ingin kamu pelajari hari ini?" style="-fx-background-color: transparent; -fx-border-color: #E77C11; -fx-border-width: 0px 0px 3px 0px;">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="searchButton" mnemonicParsing="false" onAction="#showRecomendation" prefHeight="50.0" prefWidth="42.0" style="-fx-background-color: tranparent; -fx-cursor: hand;">
+                           <graphic>
+                              <SVGPath content="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" fill="#e77c11" scaleX="2.0" scaleY="2.0" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <AnchorPane>
+                     <children>
+                        <ScrollPane fx:id="scrollPane" layoutX="179.0" prefHeight="169.0" prefWidth="800.0" visible="false">
+                           <content>
+                              <VBox fx:id="recomendation" prefHeight="200.0" prefWidth="800.0" spacing="10.0" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Text fill="#e77c11" layoutX="922.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dr. Stone">
+         <font>
+            <Font name="Verdana Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#e77c11" layoutX="1051.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kelompok 1">
+         <font>
+            <Font name="Verdana Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#e77c11" layoutX="25.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mekatronika dan Kecerdasan Buatan" wrappingWidth="390.1108856201172">
+         <font>
+            <Font name="Verdana Bold Italic" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
