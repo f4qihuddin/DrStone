@@ -1,0 +1,32 @@
+.login
+{
+    -fx-background-color: white;
+}
+.anchorPanes
+{
+    -fx-background-color: white;
+}
+.durationBackground
+{
+    -fx-background-color: #f4a261;
+}
+.button {
+    -fx-background-color:  #E77C11;    /* Warna dasar tombol */
+    -fx-text-fill: white;            /* Warna teks */
+    -fx-font-size: 27px;             /* Ukuran font */
+    -fx-font-weight: bold;           /* Teks tebal */
+    -fx-padding: 10 20;              /* Padding (atas-bawah kiri-kanan) */
+    -fx-border-radius: 5;            /* Sudut border */
+    -fx-background-radius: 5;        /* Sudut latar belakang */
+    -fx-cursor: hand;                /* Ubah kursor menjadi pointer */
+}
+
+/* Hover effect */
+.button:hover {
+    -fx-background-color: #DE760E;   /* Warna tombol saat hover */
+}
+
+/* Pressed effect */
+.button:pressed {
+    -fx-background-color: #CC7116;   /* Warna tombol saat ditekan */
+}

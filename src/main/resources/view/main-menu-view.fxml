@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: #E77C11;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+   <children>
+      <Text fill="WHITE" layoutX="382.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dr. Stone" textAlignment="CENTER">
+         <font>
+            <Font name="Artifakt Element Heavy Italic" size="96.0" />
+         </font>
+      </Text>
+      <HBox layoutX="275.0" layoutY="245.0" spacing="50.0" />
+      <Button fx:id="homeButton" layoutX="1062.0" layoutY="42.0" mnemonicParsing="false" onMouseClicked="#goToHome" prefHeight="80.0" prefWidth="77.0" style="-fx-background-color: transparent; -fx-padding: 0px; -fx-cursor: hand;" stylesheets="@style.css" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="40.0">
+         <graphic>
+            <SVGPath content="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0 M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" fill="WHITE" scaleX="4.0" scaleY="4.0" />
+         </graphic>
+      </Button>
+      <AnchorPane layoutX="181.0" layoutY="208.0" prefHeight="344.0" prefWidth="362.0" style="-fx-background-radius: 18PX;" styleClass="anchorPanes" stylesheets="@style.css">
+         <children>
+            <Button fx:id="learningButton" layoutX="34.0" layoutY="194.0" mnemonicParsing="false" onMouseClicked="#goToLearning" prefHeight="90.0" prefWidth="287.0" stylesheets="@color.css" text="LEARNING" />
+            <SVGPath content="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" fill="#e77c11" layoutX="170.0" layoutY="94.0" scaleX="8.0" scaleY="8.0" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="657.0" layoutY="208.0" prefHeight="344.0" prefWidth="362.0" style="-fx-background-radius: 18PX;" styleClass="anchorPanes" stylesheets="@style.css">
+         <children>
+            <Button fx:id="miniGameButton" layoutX="90.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#goToMiniGameMenu" prefHeight="56.0" prefWidth="191.0" scaleX="1.5" scaleY="1.5" stylesheets="@color.css" text="MINI GAME" />
+            <SVGPath content="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27" fill="#e77c11" layoutX="175.0" layoutY="105.0" scaleX="7.0" scaleY="7.0" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
