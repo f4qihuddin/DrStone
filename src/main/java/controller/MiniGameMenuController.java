@@ -42,7 +42,7 @@ public class MiniGameMenuController implements Initializable
     public void goToEasyMode() throws IOException
     {
         Stage stage = (Stage) easyModeButton.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(MainController.class.getResource("/view/mini-game-diff-1-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MiniGameMenuController.class.getResource("/view/mini-game-diff-1-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Easy Mode");
         stage.setScene(scene);
@@ -52,7 +52,7 @@ public class MiniGameMenuController implements Initializable
     public void goToMediumMode() throws IOException
     {
         Stage stage = (Stage) mediumModeButton.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(MainController.class.getResource("/view/mini-game-diff-2-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MiniGameMenuController.class.getResource("/view/mini-game-diff-2-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Medium Mode");
         stage.setScene(scene);
@@ -62,7 +62,7 @@ public class MiniGameMenuController implements Initializable
     public void goToHardMode() throws IOException
     {
         Stage stage = (Stage) hardModeButton.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(MainController.class.getResource("/view/mini-game-diff-3-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MiniGameMenuController.class.getResource("/view/mini-game-diff-3-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Hard Mode");
         stage.setScene(scene);
@@ -72,7 +72,7 @@ public class MiniGameMenuController implements Initializable
     public void goToMainMenu() throws IOException
     {
         Stage stage = (Stage) mainMenuButton.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(MainController.class.getResource("/view/main-menu-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MiniGameMenuController.class.getResource("/view/main-menu-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Main Menu");
         stage.setScene(scene);
