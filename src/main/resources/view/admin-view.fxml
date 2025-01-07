@@ -36,21 +36,21 @@
                <TextField fx:id="subCategoryField" promptText="Sub Kategori" style="-fx-font-size: 14px; -fx-border-color: #e76f51; -fx-border-width: 1px; -fx-background-radius: 10px;" />
             </children>
          </VBox>
-         <VBox prefHeight="327.0" prefWidth="421.0" spacing="20.0">
+         <VBox prefHeight="281.0" prefWidth="309.0" spacing="20.0">
             <children>
-               <TextField fx:id="descriptionField" alignment="TOP_LEFT" prefHeight="30.0" prefWidth="405.0" promptText="Deskripsi" style="-fx-font-size: 14px; -fx-border-color: #e76f51; -fx-border-width: 1px; -fx-background-radius: 20px;" />
+               <TextField fx:id="descriptionField" alignment="TOP_LEFT" prefHeight="32.0" prefWidth="355.0" promptText="Deskripsi" style="-fx-font-size: 14px; -fx-border-color: #e76f51; -fx-border-width: 1px; -fx-background-radius: 20px;" />
                <TextField fx:id="characteristicsField" alignment="TOP_LEFT" prefHeight="31.0" prefWidth="405.0" promptText="Karakteristik" style="-fx-font-size: 14px; -fx-border-color: #e76f51; -fx-border-width: 1px; -fx-background-radius: 20px;" />
             </children>
          </VBox>
 
-         <VBox prefHeight="289.0" prefWidth="205.0" spacing="10">
+         <VBox alignment="CENTER" prefHeight="281.0" prefWidth="290.0" spacing="10">
             <Button fx:id="chooseStoneImageButton" mnemonicParsing="false" onMouseClicked="#openFileChoose" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #e76f51; -fx-text-fill: white; -fx-font-weight: bold;" text="Pilih File Gambar" />
             <ImageView fx:id="stoneImagePreview" fitHeight="144.0" fitWidth="203.0" onMouseClicked="#openFileChoose" pickOnBounds="true" preserveRatio="true" />
-            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
                <children>
-                  <Button fx:id="createStoneButton" onAction="#createStone" style="-fx-background-color: #2a9d8f; -fx-text-fill: white; -fx-font-weight: bold;" text="Create" />
-                  <Button fx:id="updateStoneButton" onAction="#updateStone" style="-fx-background-color: #e9c46a; -fx-text-fill: white; -fx-font-weight: bold;" text="Update" />
-                  <Button fx:id="deleteStoneButton" onAction="#deleteStone" style="-fx-background-color: #e63946; -fx-text-fill: white; -fx-font-weight: bold;" text="Delete" />
+                  <Button fx:id="createStoneButton" onAction="#createStone" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #2a9d8f; -fx-text-fill: white; -fx-font-weight: bold;" text="Create" />
+                  <Button fx:id="updateStoneButton" onAction="#updateStone" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #e9c46a; -fx-text-fill: white; -fx-font-weight: bold;" text="Update" />
+                  <Button fx:id="deleteStoneButton" onAction="#deleteStone" prefWidth="80.0" style="-fx-background-color: #e63946; -fx-text-fill: white; -fx-font-weight: bold;" text="Delete" />
                </children>
             </HBox>
          </VBox>
