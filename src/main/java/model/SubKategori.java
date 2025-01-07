@@ -1,23 +1,36 @@
 package model;
 
 import dao.BaseDAO;
+import java.util.List;
 
-public class SubKategori extends BaseDAO
+public class SubCategory extends BaseDAO
 {
-    private String namaSubKategori;
+    private String name;
+    private List<Stone> listOfStones;
 
-    public SubKategori(String namaSubKategori)
+    public SubCategory(String name, List<Stone> listOfStones)
     {
-        this.setNamaSubKategori(namaSubKategori);
+        this.setName(name);
+        this.setListOfStones(listOfStones);
     }
 
-    public String getNamaSubKategori()
+    public String getName()
     {
-        return namaSubKategori;
+        return name;
     }
 
-    public void setNamaSubKategori(String namaSubKategori)
+    public void setName(String name)
     {
-        this.namaSubKategori = namaSubKategori;
+        this.name = name;
+    }
+
+    public List<Stone> getListOfStones()
+    {
+        return listOfStones;
+    }
+
+    public void setListOfStones(List<Stone> listOfStones)
+    {
+        this.listOfStones = listOfStones;
     }
 }
