@@ -2,22 +2,36 @@ package model;
 
 import dao.BaseDAO;
 
-public class Kategori extends BaseDAO
+import java.util.ArrayList;
+
+public class Category extends BaseDAO
 {
-    private String namaKategori;
+    private String categoryName;
+    private ArrayList<SubCategory> subCategories;
 
-    public Kategori(String namaKategori)
+    public Category(String categoryName, ArrayList<SubCategory> subCategories)
     {
-        this.setNamaKategori(namaKategori);
+        this.setCategoryName(categoryName);
+        this.setSubCategories(subCategories);
     }
 
-    public String getNamaKategori()
+    public String getCategoryName()
     {
-        return namaKategori;
+        return categoryName;
     }
 
-    public void setNamaKategori(String namaKategori)
+    public void setCategoryName(String categoryName)
     {
-        this.namaKategori = namaKategori;
+        this.categoryName = categoryName;
+    }
+
+    public ArrayList<SubCategory> getSubCategories()
+    {
+        return subCategories;
+    }
+
+    public void setSubCategories(ArrayList<SubCategory> subCategories)
+    {
+        this.subCategories = subCategories;
     }
 }
