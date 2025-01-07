@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: #E77C11;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MiniGameController">
+   <children>
+      <FlowPane fx:id="board" alignment="CENTER" hgap="5.0" layoutX="-106.0" layoutY="17.0" prefHeight="611.0" prefWidth="1414.0" scaleX="0.8" scaleY="0.8" vgap="5.0" AnchorPane.leftAnchor="-106.0" AnchorPane.rightAnchor="-106.66666666666674">
+         <children>
+            <ImageView fx:id="card" fitHeight="300.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card1" fitHeight="300.0" fitWidth="150.0" layoutX="254.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card11" fitHeight="300.0" fitWidth="150.0" layoutX="313.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card111" fitHeight="300.0" fitWidth="150.0" layoutX="372.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card1111" fitHeight="300.0" fitWidth="150.0" layoutX="431.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card11111" fitHeight="300.0" fitWidth="150.0" layoutX="490.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card111111" fitHeight="300.0" fitWidth="150.0" layoutX="254.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card1111111" fitHeight="300.0" fitWidth="150.0" layoutX="313.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card11111111" fitHeight="300.0" fitWidth="150.0" layoutX="372.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card111111111" fitHeight="300.0" fitWidth="150.0" layoutX="431.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card1111111111" fitHeight="300.0" fitWidth="150.0" layoutX="696.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card11111111111" fitHeight="300.0" fitWidth="150.0" layoutX="385.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card111111111111" fitHeight="300.0" fitWidth="150.0" layoutX="463.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card1111111111111" fitHeight="300.0" fitWidth="150.0" layoutX="541.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card11111111111111" fitHeight="300.0" fitWidth="150.0" layoutX="959.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card111111111111111" fitHeight="300.0" fitWidth="150.0" layoutX="493.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card1111111111111111" fitHeight="300.0" fitWidth="150.0" layoutX="570.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="card11111111111111111" fitHeight="300.0" fitWidth="150.0" layoutX="648.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Kapur.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </FlowPane>
+      <HBox alignment="CENTER" layoutX="300.0" layoutY="518.0" prefHeight="50.0" prefWidth="600.0" spacing="150.0">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="54.0" prefWidth="415.0" vgap="10.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="87.33331298828125" minWidth="0.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.33331298828125" minWidth="10.0" prefWidth="200.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="27.0" prefWidth="168.0" text="Tebakan :">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="208.0" text="Match :" textAlignment="RIGHT" textFill="#fdf0d5" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="guesses" text="0" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="correctGuesses" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="79.0" text="0" textFill="#fdf0d5" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="525.0" layoutY="56.0" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #ffb703; -fx-background-radius: 20;">
+         <children>
+            <Label fx:id="timerLabel" alignment="CENTER" layoutX="15.0" layoutY="11.0" prefHeight="27.0" prefWidth="120.0" textAlignment="CENTER" textFill="#fdf0d5">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToMainMenu" prefHeight="60.0" prefWidth="60.0">
+         <graphic>
+            <SVGPath content="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" scaleX="2.0" scaleY="2.0" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

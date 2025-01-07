@@ -1,0 +1,71 @@
+.login
+{
+    -fx-background-color: #FAEBD7;
+}
+.anchorPanes
+{
+    -fx-background-color: #FAEBD7;
+}
+.button
+{
+    -fx-background-radius: 20px;
+    -fx-background-color: #fdf0d5;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+}
+.easyDifficultyButton
+{
+    -fx-background-radius: 20px;
+    -fx-background-color: #fb8b24;
+    -fx-text-fill: #fdf0d5;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+}
+.mediumDifficultyButton
+{
+    -fx-background-radius: 20px;
+    -fx-background-color: #e36414;
+    -fx-text-fill: #fdf0d5;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+}
+.hardDifficultyButton
+{
+    -fx-background-radius: 20px;
+    -fx-background-color: #9a031e;
+    -fx-text-fill: #fdf0d5;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+}
+#subCategoriesID
+{
+    -fx-background-color: #f4a261;
+    -fx-padding: 15px;
+    -fx-border-width: 2px;
+    -fx-background-radius: 15px;
+}
+
+/* style.css */
+.button-custom {
+    -fx-background-color: #FFFFFF;  /* Green background */
+    -fx-text-fill:  #E77C11;           /* White text */
+    -fx-font-size: 18px;            /* Font size */
+    -fx-padding: 10px 20px;         /* Padding */
+    -fx-border-radius: 5px;        /* Rounded corners */
+}
+
+.button-custom:hover {
+    -fx-background-color: #FFCC80;  /* Very light orange, close to white */
+    -fx-border-color: #FFB74D;      /* Lighter orange for the border */
+}
+
+.button-custom-list {
+    -fx-background-color: #FFFFFF;  /* Green background */
+    -fx-text-fill:  #E77C11;           /* White text */
+    -fx-font-size: 10px;            /* Font size */
+    -fx-padding: 10px 20px;         /* Padding */
+}
