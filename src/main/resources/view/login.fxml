@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <left>
+      <AnchorPane prefHeight="650.0" prefWidth="542.0" style="-fx-background-color: #E77C11;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="88.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dr.Stone">
+               <font>
+                  <Font name="Artifakt Element Black Italic" size="96.0" />
+               </font>
+            </Text>
+            <SVGPath content="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.882 1.731a.48.48 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.7.7 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a1 1 0 0 0-.462-.04 7 7 0 0 1 2.45-2.027m-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.8.8 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.45.45 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282l.04-.001a7.003 7.003 0 0 1-12.658.905Z" fill="WHITE" layoutX="284.0" layoutY="207.0" scaleX="16.0" scaleY="16.0" />
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="650.0" prefWidth="691.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="inputUsername" layoutX="220.0" layoutY="291.0" prefHeight="35.0" prefWidth="254.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 3px 0px; -fx-border-color: #E77C11; -fx-font-size: 18px;" />
+            <PasswordField fx:id="inputPassword" layoutX="218.0" layoutY="373.0" prefHeight="35.0" prefWidth="258.0" promptText="Password" style="-fx-border-color: #E77C11; -fx-background-color: transparent; -fx-border-width: 0px 0px 3px 0px; -fx-font-size: 18px;" />
+            <Button fx:id="logInButton" layoutX="264.0" layoutY="487.0" mnemonicParsing="false" onMouseClicked="#validateUser" prefHeight="62.0" prefWidth="166.0" stylesheets="@color.css" text="Log in" />
+            <Button fx:id="signUpButton" layoutX="368.0" layoutY="411.0" minHeight="18.0" minWidth="46.0" mnemonicParsing="false" onMouseClicked="#goToSignUp" prefHeight="28.0" prefWidth="70.0" style="-fx-background-radius: 0; -fx-font-weight: bold; -fx-background-color: transparent; -fx-border-radius: 0; -fx-font-size: 12px; -fx-text-fill: #E77C11; -fx-cursor: hand;" text="Register">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Text layoutX="255.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Don't have account?" />
+            <Text fill="#e77c11" layoutX="257.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="User Login">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="text" fill="RED" layoutX="171.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="352.3831272125244">
+               <font>
+                  <Font name="Artifakt Element Black Italic" size="24.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="134.0" layoutY="44.0" prefHeight="111.0" prefWidth="114.0" />
+            <SVGPath content="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" fill="#e77c11" layoutX="330.0" layoutY="126.0" scaleX="9.0" scaleY="9.0" />
+            <SVGPath content="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" fill="#e77c11" layoutX="192.0" layoutY="307.0" scaleX="2.0" scaleY="2.0" />
+            <SVGPath content="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2M2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#e77c11" layoutX="192.0" layoutY="390.0" scaleX="2.0" scaleY="2.0" />
+            <TextField fx:id="inputPasswordVisible" layoutX="218.0" layoutY="373.0" prefHeight="35.0" prefWidth="258.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 3px 0px; -fx-border-color: #E77C11; -fx-font-size: 18px;" visible="false" />
+            <Button fx:id="VisiblePasswordButton" layoutX="445.0" layoutY="378.0" mnemonicParsing="false" onAction="#togglePasswordVisibility" prefHeight="25.0" prefWidth="46.0" style="-fx-background-radius: 0; -fx-font-weight: bold; -fx-background-color: transparent; -fx-border-radius: 0; -fx-font-size: 18px; -fx-text-fill: #E77C11; -fx-cursor: hand;" text="🔒" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
